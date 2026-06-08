@@ -6,11 +6,13 @@ import { motion } from "motion/react";
 
 import { techStack } from "@/lib/constants/tech-stack";
 import { cn } from "@/lib/utils";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 
 export default function TechStack() {
+  const isMobile = useIsMobile();
   const [showAllNames, setShowAllNames] = useState(false); // Whether to show names of all items or not
   const [expandedItem, setExpandedItem] = useState<string | null>(null);
 
@@ -40,7 +42,7 @@ export default function TechStack() {
           return (
             <motion.div
               key={item.name}
-              layout
+              layout={isMobile ? !showAllNames : true}
               transition={{ duration: 0.6, type: "spring" }}
             >
               <Badge

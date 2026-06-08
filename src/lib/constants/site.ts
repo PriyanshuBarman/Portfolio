@@ -3,7 +3,7 @@ export const SITE_INFO = {
   shortName: "Priyanshu",
   url: process.env.NEXT_PUBLIC_SITE_URL,
   description:
-    "Hi, I'm Priyanshu, a Full-Stack Developer. I build products that solve real problems",
+    "Hi, I'm Priyanshu, a Full-Stack Developer. I build products that solve real problems.",
   keywords: [
     "Priyanshu Barman",
     "Priyanshu Barman Portfolio",

@@ -48,11 +48,11 @@ export const projects: Projects = [
     features: [
       "Invest in mutual funds using virtual money with zero financial risk.",
       "Start virtual SIPs in mutual funds and learn how systematic investing works.",
-      "Step-Up SIPs with automatic fixed or percentage-based SIP increases.",
+      "Step-Up SIPs with automatic fixed amount or percentage based SIP increases.",
       "Track portfolio growth, returns, and performance across market conditions.",
       "See how other investors are performing, their investment activity & portfolio allocation.",
       "Send, receive, Scan & Pay your virtual money with others instantly—just like UPI.",
-      "Groww-inspired UI that feels like a real investing app.",
+      "Groww app inspired UI that feels like a real investing app.",
     ],
   },
   {

@@ -31,7 +31,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           width={640}
           height={360}
           alt={project.name}
-          className="aspect-video w-full rounded-xl sm:rounded-xl"
+          className="bg-accent aspect-video w-full rounded-xl sm:rounded-xl"
         />
 
         <div className="mt-2 px-3">

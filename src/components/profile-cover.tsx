@@ -12,7 +12,7 @@ export default function ProfileCover() {
         src="/everest.webp"
       />
       <div className="absolute inset-0 bg-linear-to-t from-white/40 via-white/10 to-transparent dark:from-black/50 dark:via-black/20" />
-      <span className="text-background/75 dark:text-foreground/75 absolute mb-10 gap-2 sm:mb-16 sm:text-xl">
+      <span className="text-background/85 dark:text-foreground/75 absolute mb-10 gap-2 sm:mb-16 sm:text-xl">
         Everest is <span className="line-through">the limit</span>
       </span>
     </div>

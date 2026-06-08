@@ -51,7 +51,7 @@ export default function ProjectDetailsModal({
       <WrapperContent className="pb-4 md:max-w-2xl md:rounded-3xl md:p-8!">
         <WrapperHeader className="mt-4 gap-4 text-start! md:mt-0">
           <div className="flex items-center justify-between">
-            <WrapperTitle className="text-xl">{project.name}</WrapperTitle>
+            <WrapperTitle className="md:text-xl">{project.name}</WrapperTitle>
             <div className="space-x-2">
               <LinkButton
                 href={project.githubLink}
@@ -130,7 +130,7 @@ export default function ProjectDetailsModal({
                     <Badge
                       key={item.name}
                       variant="outline"
-                      className="h-7 cursor-pointer gap-2 font-normal"
+                      className="h-7 cursor-pointer gap-1.5 font-normal"
                     >
                       <item.icon aria-hidden="true" />
                       <span>{item.name}</span>
