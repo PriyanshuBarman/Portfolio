@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import { META_THEME_COLORS, SITE_INFO, X_USERNAME } from "@/lib/constants/site";
 import { cn } from "@/lib/utils";
@@ -60,6 +61,7 @@ export default function RootLayout({
         geist.variable,
       )}
     >
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
       <body className="flex min-h-full flex-col">
         <ThemeProvider
           attribute="class"
