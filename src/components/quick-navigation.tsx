@@ -4,7 +4,6 @@ import type { MouseEvent } from "react";
 
 import { SECTIONS } from "@/lib/constants/sections";
 import { cn } from "@/lib/utils";
-
 import { buttonVariants } from "./ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 

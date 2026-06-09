@@ -5,7 +5,6 @@ import { ChevronDownIcon } from "lucide-react";
 
 import { projects } from "@/lib/constants/projects";
 import { cn } from "@/lib/utils";
-
 import ProjectCard from "../project-card";
 import { Button } from "../ui/button";
 

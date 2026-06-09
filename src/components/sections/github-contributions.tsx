@@ -2,7 +2,6 @@ import { Suspense } from "react";
 import { LoaderIcon } from "lucide-react";
 
 import { getGitHubContributions } from "@/lib/get-contributions";
-
 import GitHubContributionGraph from "../contribution-graph";
 
 export default function GitHubContributions() {

@@ -17,7 +17,6 @@
     "^@/components/ui/(.*)$",
     "^@/components/(.*)$",
     "^@/(.*)$",
-    "",
     "^[./]"
   ],
   "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],

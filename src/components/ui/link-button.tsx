@@ -3,7 +3,6 @@ import Link from "next/link";
 import type { VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
-
 import { buttonVariants } from "./button";
 
 type LinkButtonProps = {

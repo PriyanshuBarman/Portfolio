@@ -7,7 +7,6 @@ import { motion } from "motion/react";
 import { techStack } from "@/lib/constants/tech-stack";
 import { cn } from "@/lib/utils";
 import { useIsMobile } from "@/hooks/use-mobile";
-
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 

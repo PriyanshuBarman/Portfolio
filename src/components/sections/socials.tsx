@@ -1,5 +1,4 @@
 import { SOCIALS } from "@/lib/constants/socials";
-
 import { LinkButton } from "../ui/link-button";
 
 export default function Socials() {

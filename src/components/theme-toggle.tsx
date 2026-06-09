@@ -8,7 +8,6 @@ import { useHotkeys } from "react-hotkeys-hook";
 
 import { useMetaColor } from "@/hooks/use-meata-color";
 import { Button, type buttonVariants } from "@/components/ui/button";
-
 import { Kbd } from "./ui/kbd";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 

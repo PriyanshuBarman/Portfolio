@@ -18,7 +18,6 @@ import {
 } from "react-icons/si";
 
 import type { Projects } from "@/types/project";
-
 import { GITHUB_LINK } from "./site";
 
 export const projects: Projects = [

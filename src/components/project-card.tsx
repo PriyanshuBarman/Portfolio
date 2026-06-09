@@ -12,7 +12,6 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-
 import ProjectDetailsModal from "./project-details-modal";
 import { Badge } from "./ui/badge";
 import { LinkButton } from "./ui/link-button";

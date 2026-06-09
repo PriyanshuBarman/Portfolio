@@ -12,7 +12,6 @@ import {
   ContributionGraphTotalCount,
   type Activity,
 } from "@/components/ui/contribution-graph";
-
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 export default function GitHubContributionGraph({

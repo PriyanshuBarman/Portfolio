@@ -9,7 +9,6 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-
 import ProfileCover from "../profile-cover";
 import ThemeToggle from "../theme-toggle";
 import { Badge } from "../ui/badge";
