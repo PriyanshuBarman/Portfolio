@@ -24,7 +24,7 @@ export const projects: Projects = [
   {
     name: "Vestify",
     img: "/vestify.webp",
-    siteLink: "https://vestiffy.vercel.app",
+    siteLink: "https://vestify.priyanshux.me?utm_source=portfolio",
     githubLink: `${GITHUB_LINK}/vestify`,
     description:
       "A virtual investment platform that simulates real-world mutual fund investing. Featuring a Groww-inspired app UI.",
@@ -57,7 +57,7 @@ export const projects: Projects = [
   {
     name: "Progoti",
     img: "/progoti.webp",
-    siteLink: "https://progoti.in",
+    siteLink: "https://progoti.in?utm_source=portfolio",
     githubLink: `${GITHUB_LINK}/progoti`,
     description:
       "An educational platform for West Bengal board exams (Previous year questions, Mock tests, MCQ tests, Suggestions etc.)",
@@ -100,7 +100,7 @@ export const projects: Projects = [
   {
     name: "Prime Weather",
     img: "/primeweather.webp",
-    siteLink: "https://primeweather.vercel.app",
+    siteLink: "https://primeweather.vercel.app?utm_source=portfolio",
     githubLink: `${GITHUB_LINK}/primeweather`,
     description:
       "A modern weather app with a sleek design and customizable widgets, geolocation, city search, etc.",
@@ -118,7 +118,7 @@ export const projects: Projects = [
   {
     name: "Qr Code Scanner",
     img: "/qr-code-scanner.webp",
-    siteLink: "https://scan-qrcode.vercel.app",
+    siteLink: "https://scanner.priyanshux.me?utm_source=portfolio",
     githubLink: `${GITHUB_LINK}/QrCodeScanner`,
     description:
       "A QR code scanner built using qr-scanner package for Vestify. Later integrated into the main Vestify platform.",
