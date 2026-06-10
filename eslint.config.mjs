@@ -21,6 +21,7 @@ const eslintConfig = defineConfig([
       "unused-imports": unusedImports,
     },
     rules: {
+      "@next/next/no-img-element": "off",
       "no-console": ["warn", { allow: ["error"] }],
       "@typescript-eslint/consistent-type-imports": [
         "error",
