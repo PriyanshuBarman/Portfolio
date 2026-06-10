@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { LinkIcon } from "lucide-react";
+import { Link04Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { FiGithub } from "react-icons/fi";
 
 import type { Project } from "@/types/project";
@@ -109,7 +110,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                         className="border-border rounded-full text-xs"
                         onClick={(e) => e.stopPropagation()}
                       >
-                        <LinkIcon />
+                        <HugeiconsIcon icon={Link04Icon} className="size-5" />
                       </LinkButton>
                     }
                   />

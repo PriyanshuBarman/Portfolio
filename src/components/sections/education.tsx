@@ -1,11 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import {
-  BuildingIcon,
-  ChevronsDownUpIcon,
-  ChevronsUpDownIcon,
-} from "lucide-react";
+import { UnfoldLessIcon, UnfoldMoreIcon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { AnimatePresence, motion } from "motion/react";
 
 import { EDUCATION } from "@/lib/constants/education";
@@ -34,20 +31,23 @@ export default function Education() {
               <Button
                 onClick={() => setIsCollapsed(!isCollapsed)}
                 size="icon"
-                variant="ghost"
-                className="sm:border-border"
+                variant="outline"
                 aria-label={
                   isCollapsed
                     ? "Show education details"
                     : "Hide education details"
                 }
               >
-                {isCollapsed ? <ChevronsUpDownIcon /> : <ChevronsDownUpIcon />}
+                {isCollapsed ? (
+                  <HugeiconsIcon strokeWidth={2} icon={UnfoldMoreIcon} />
+                ) : (
+                  <HugeiconsIcon strokeWidth={2} icon={UnfoldLessIcon} />
+                )}
               </Button>
             }
           />
           <TooltipContent sideOffset={10}>
-            {isCollapsed ? "View Education Details" : "Hide Education Details"}
+            {isCollapsed ? "Show Education Details" : "Hide Education Details"}
           </TooltipContent>
         </Tooltip>
       </div>
@@ -65,12 +65,15 @@ export default function Education() {
                   <ItemMedia
                     role="listitem"
                     variant="icon"
-                    className="ring-accent size-10 rounded-full ring-2"
+                    className="ring-accent size-10 rounded-full ring-2 sm:size-11"
                   >
-                    <BuildingIcon className="size5" />
+                    <HugeiconsIcon
+                      icon={item.icon}
+                      className="size-4.5 sm:size-5"
+                    />
                   </ItemMedia>
                   <ItemContent>
-                    <ItemTitle className="line-clamp-2! font-normal sm:text-lg">
+                    <ItemTitle className="line-clamp-2! font-[450] sm:text-lg">
                       {item.board}
                     </ItemTitle>
                     <ItemDescription>{item.course}</ItemDescription>

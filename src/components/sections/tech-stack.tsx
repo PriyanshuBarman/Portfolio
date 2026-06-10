@@ -1,7 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronsLeftRight, ChevronsRightLeftIcon } from "lucide-react";
+import {
+  ChevronsLeftRightIcon,
+  ChevronsRightLeftIcon,
+} from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { motion } from "motion/react";
 
 import { techStack } from "@/lib/constants/tech-stack";
@@ -30,7 +34,11 @@ export default function TechStack() {
           variant="secondary"
           className="font-normal"
         >
-          {showAllNames ? <ChevronsRightLeftIcon /> : <ChevronsLeftRight />}
+          {showAllNames ? (
+            <HugeiconsIcon strokeWidth={2} icon={ChevronsRightLeftIcon} />
+          ) : (
+            <HugeiconsIcon strokeWidth={2} icon={ChevronsLeftRightIcon} />
+          )}
           {showAllNames ? "Hide names" : "Show names"}
         </Button>
       </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { ArrowLeftIcon, HomeIcon } from "lucide-react";
+import { ArrowLeftIcon, Home09Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 
 import {
   Empty,
@@ -30,12 +31,12 @@ export default function NotFoundPage() {
         <EmptyContent className="mt-2">
           <div className="flex gap-2">
             <LinkButton href="/" size="lg">
-              <HomeIcon />
+              <HugeiconsIcon strokeWidth={2} icon={Home09Icon} />
               Go Home
             </LinkButton>
 
             <LinkButton href="/" size="lg" variant="outline">
-              <ArrowLeftIcon /> Go Back
+              <HugeiconsIcon strokeWidth={2} icon={ArrowLeftIcon} /> Go Back
             </LinkButton>
           </div>
         </EmptyContent>

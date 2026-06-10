@@ -1,5 +1,6 @@
 import { Suspense } from "react";
-import { LoaderIcon } from "lucide-react";
+import { Loading03Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 
 import { getGitHubContributions } from "@/lib/get-contributions";
 import GitHubContributionGraph from "../contribution-graph";
@@ -20,7 +21,10 @@ export default function GitHubContributions() {
 function GitHubContributionFallback() {
   return (
     <div className="flex h-40.5 w-full items-center justify-center">
-      <LoaderIcon className="text-muted-foreground animate-spin" />
+      <HugeiconsIcon
+        icon={Loading03Icon}
+        className="text-muted-foreground animate-spin"
+      />
     </div>
   );
 }

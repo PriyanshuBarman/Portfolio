@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { ChevronsDownUpIcon, ChevronsUpDownIcon, LinkIcon } from "lucide-react";
+import {
+  Link04Icon,
+  UnfoldLessIcon,
+  UnfoldMoreIcon,
+} from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { AnimatePresence, motion } from "motion/react";
 import { FiGithub } from "react-icons/fi";
 
@@ -51,7 +56,7 @@ export default function ProjectDetailsModal({
         <WrapperHeader className="mt-4 gap-4 text-start! md:mt-0">
           <div className="flex items-center justify-between">
             <WrapperTitle className="md:text-xl">{project.name}</WrapperTitle>
-            <div className="space-x-2">
+            <div className="flex items-center gap-2">
               <LinkButton
                 href={project.githubLink}
                 size="sm"
@@ -72,7 +77,7 @@ export default function ProjectDetailsModal({
                   aria-label="Visit Website"
                   className="text-xs font-normal"
                 >
-                  <LinkIcon />
+                  <HugeiconsIcon icon={Link04Icon} className="size-4.5" />
                   Visit Site
                 </LinkButton>
               )}
@@ -108,9 +113,9 @@ export default function ProjectDetailsModal({
                 }
               >
                 {isTechStackHidden ? (
-                  <ChevronsUpDownIcon />
+                  <HugeiconsIcon strokeWidth={2} icon={UnfoldMoreIcon} />
                 ) : (
-                  <ChevronsDownUpIcon />
+                  <HugeiconsIcon strokeWidth={2} icon={UnfoldLessIcon} />
                 )}
               </Button>
             </div>

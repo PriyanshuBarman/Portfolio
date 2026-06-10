@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { PaperclipIcon } from "lucide-react";
+import { LicenseIcon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { TbRosetteDiscountCheckFilled } from "react-icons/tb";
 
 import { RESUME_LINK } from "@/lib/constants/site";
@@ -51,7 +52,7 @@ export default function ProfileHeader() {
               rel="noopener noreferrer"
               className="h-8.5 rounded-xl px-3 text-xs font-normal hover:scale-99 sm:h-9"
             >
-              <PaperclipIcon />
+              <HugeiconsIcon icon={LicenseIcon} />
               Resume
             </LinkButton>
             <Badge

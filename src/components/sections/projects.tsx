@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDownIcon } from "lucide-react";
+import { ChevronDownIcon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 
 import { projects } from "@/lib/constants/projects";
 import { cn } from "@/lib/utils";
@@ -33,7 +34,11 @@ export default function Projects() {
         className="border-border hover:border-border/50 mx-auto mt-12 rounded-xl px-4 font-normal shadow-2xs hover:scale-99 hover:shadow-none"
       >
         {isViewAll ? "View less" : "View all"}{" "}
-        <ChevronDownIcon className={cn(isViewAll && "rotate-180")} />
+        <HugeiconsIcon
+          icon={ChevronDownIcon}
+          strokeWidth={2}
+          className={cn("size-4.5", isViewAll && "rotate-180")}
+        />
       </Button>
     </section>
   );
