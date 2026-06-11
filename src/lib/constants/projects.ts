@@ -100,7 +100,7 @@ export const projects: Projects = [
   {
     name: "Prime Weather",
     img: "/primeweather.webp",
-    siteLink: "https://primeweather.vercel.app?utm_source=portfolio",
+    siteLink: "https://weather.priyanshux.me?utm_source=portfolio",
     githubLink: `${GITHUB_LINK}/primeweather`,
     description:
       "A modern weather app with a sleek design and customizable widgets, geolocation, city search, etc.",
@@ -118,7 +118,7 @@ export const projects: Projects = [
   {
     name: "Qr Code Scanner",
     img: "/qr-code-scanner.webp",
-    siteLink: "https://scanner.priyanshux.me?utm_source=portfolio",
+    siteLink: "https://scan.priyanshux.me?utm_source=portfolio",
     githubLink: `${GITHUB_LINK}/QrCodeScanner`,
     description:
       "A QR code scanner built using qr-scanner package for Vestify. Later integrated into the main Vestify platform.",
