@@ -8,8 +8,12 @@ import { useHotkeys } from "react-hotkeys-hook";
 import { cn } from "@/lib/utils";
 import { useMetaColor } from "@/hooks/use-meata-color";
 import { Button, type buttonVariants } from "@/components/ui/button";
-import { Kbd } from "./ui/kbd";
-import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
+import { Kbd } from "@/components/ui/kbd";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 type ThemeToggleProps = {
   className?: string;

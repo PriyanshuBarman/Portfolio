@@ -30,7 +30,7 @@ import {
   SiZod,
 } from "react-icons/si";
 
-export const techStack = [
+export const TECH_STACK = [
   { name: "TypeScript", icon: SiTypescript, iconColor: "#3178C6" },
   { name: "JavaScript", icon: SiJavascript, iconColor: "#F7DF1E" },
   { name: "React", icon: SiReact, iconColor: "#61DAFB" },

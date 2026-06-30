@@ -129,7 +129,7 @@
     cursor: pointer;
   }
   html {
-    @apply scrollbar-gutter-stable font-sans ;
+    @apply scrollbar-gutter-stable font-sans;
   }
   button:not(:disabled),
   [role="button"]:not(:disabled) {
@@ -161,9 +161,7 @@
 #quick-navigation {
   scroll-target-group: auto;
 }
-#quick-navigation a {
-  @apply bg-ring/50 transition-all duration-200 ease-in-out;
-}
+
 #quick-navigation a:target-current {
-  background-color: var(--color-foreground) !important;
+  @apply bg-foreground text-background;
 }

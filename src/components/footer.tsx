@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 
-import { CopyrightYear } from "./copyright-year";
-import { VisitorCount } from "./visitor-count";
+import { CopyrightYear } from "@/components/copyright-year";
+import { VisitorCount } from "@/components/visitor-count";
 
 export default function Footer() {
   return (

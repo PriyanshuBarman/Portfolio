@@ -6,6 +6,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { AnimatePresence, motion } from "motion/react";
 
 import { EDUCATION } from "@/lib/constants/education";
+import { Button } from "@/components/ui/button";
 import {
   Item,
   ItemContent,
@@ -14,8 +15,11 @@ import {
   ItemMedia,
   ItemTitle,
 } from "@/components/ui/item";
-import { Button } from "../ui/button";
-import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export default function Education() {
   const [isCollapsed, setIsCollapsed] = useState(false);

@@ -20,9 +20,9 @@ import {
 import type { Projects } from "@/types/project";
 import { GITHUB_LINK } from "./site";
 
-export const projects: Projects = [
+export const PROJECTS: Projects = [
   {
-    name: "Vestify",
+    name: "Vestify / 135+ users",
     img: "/vestify.webp",
     siteLink: "https://vestify.priyanshux.me?utm_source=portfolio",
     githubLink: `${GITHUB_LINK}/vestify`,

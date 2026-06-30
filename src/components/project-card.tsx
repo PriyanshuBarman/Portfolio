@@ -22,6 +22,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 
   return (
     <>
+      {/* Card */}
       <div
         onClick={() => setIsModalOpen(true)}
         className="bg-card cursor-pointer space-y-4 rounded-t-2xl rounded-b-3xl border p-2 pb-4 sm:space-y-6 sm:rounded-2xl"

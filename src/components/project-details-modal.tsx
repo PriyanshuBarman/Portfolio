@@ -10,6 +10,8 @@ import { FiGithub } from "react-icons/fi";
 
 import type { Project } from "@/types/project";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -24,9 +26,7 @@ import {
   DrawerHeader,
   DrawerTitle,
 } from "@/components/ui/drawer";
-import { Badge } from "./ui/badge";
-import { Button } from "./ui/button";
-import { LinkButton } from "./ui/link-button";
+import { LinkButton } from "@/components/ui/link-button";
 
 type ProjectInfoDrawerProps = {
   open: boolean;

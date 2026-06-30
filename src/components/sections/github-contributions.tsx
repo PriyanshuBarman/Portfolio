@@ -3,13 +3,15 @@ import { Loading03Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 
 import { getGitHubContributions } from "@/lib/get-contributions";
-import GitHubContributionGraph from "../contribution-graph";
+import GitHubContributionGraph from "@/components/contribution-graph";
 
 export default function GitHubContributions() {
   const contributions = getGitHubContributions();
   return (
     <section id="github-contributions" className="border-t border-dashed py-12">
-      <h2 className="mb-4 px-4 text-xl font-semibold sm:text-2xl">GitHub</h2>
+      <h2 className="mb-4 px-4 text-xl font-semibold sm:text-2xl">
+        GitHub Contributions
+      </h2>
 
       <Suspense fallback={<GitHubContributionFallback />}>
         <GitHubContributionGraph contributions={contributions} />

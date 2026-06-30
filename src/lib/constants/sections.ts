@@ -4,7 +4,7 @@ export const SECTIONS = [
     id: "profile-header",
   },
   {
-    name: "Proof of work",
+    name: "Projects",
     id: "projects",
   },
   {

@@ -8,11 +8,11 @@ import {
 import { HugeiconsIcon } from "@hugeicons/react";
 import { motion } from "motion/react";
 
-import { techStack } from "@/lib/constants/tech-stack";
+import { TECH_STACK } from "@/lib/constants/tech-stack";
 import { cn } from "@/lib/utils";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { Badge } from "../ui/badge";
-import { Button } from "../ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
 export default function TechStack() {
   const isMobile = useIsMobile();
@@ -44,7 +44,7 @@ export default function TechStack() {
       </div>
 
       <div className="mt-6 flex flex-wrap gap-3 overflow-hidden">
-        {techStack.map((item) => {
+        {TECH_STACK.map((item) => {
           const isExpanded = expandedItem === item.name || showAllNames;
           return (
             <motion.div

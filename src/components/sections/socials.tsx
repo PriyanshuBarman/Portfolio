@@ -1,11 +1,11 @@
 import { SOCIALS } from "@/lib/constants/socials";
-import { LinkButton } from "../ui/link-button";
+import { LinkButton } from "@/components/ui/link-button";
 
 export default function Socials() {
   return (
     <section
       id="socials"
-      className="flex flex-col items-center justify-center border-t border-dashed px-4 py-8"
+      className="flex flex-col items-center justify-center border-t border-dashed px-4 py-8 sm:pt-10 sm:pb-16"
     >
       <h2 className="text-lg font-medium sm:text-2xl sm:tracking-tight">
         Let&apos;s Connect
@@ -27,7 +27,7 @@ export default function Socials() {
                 ? "Send me an email"
                 : `Visit ${social.name} profile`
             }
-            className="border-border hover:border-border/50 size-10 rounded-full font-normal shadow-xs hover:scale-99 hover:shadow-none sm:h-11 sm:w-auto sm:rounded-xl sm:px-4"
+            className="border-border hover:border-border/50 size-10 rounded-full shadow-xs hover:scale-99 hover:shadow-none sm:h-11 sm:w-auto sm:rounded-xl sm:px-4"
           >
             <social.icon aria-hidden="true" />
             <span className="max-sm:sr-only">{social.name}</span>
