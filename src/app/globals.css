@@ -156,12 +156,3 @@
     scrollbar-color: var(--border) transparent;
   }
 }
-
-/* Qucik navigation styling */
-#quick-navigation {
-  scroll-target-group: auto;
-}
-
-#quick-navigation a:target-current {
-  @apply bg-foreground text-background;
-}

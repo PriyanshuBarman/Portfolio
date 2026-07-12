@@ -31,7 +31,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-xs">
+    <nav className="bg-background/50 sticky top-0 z-50 backdrop-blur-xs">
       <div className="mx-auto flex max-w-3xl justify-between p-4">
         <LinkButton
           href="#"
