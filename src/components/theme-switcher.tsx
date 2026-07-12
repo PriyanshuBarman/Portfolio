@@ -30,7 +30,7 @@ export default function ThemeSwitcher() {
   );
 
   if (!isMounted) {
-    return <div className="flex h-8 w-24" />;
+    return <div className="flex h-8.5 w-25.5" />;
   }
 
   return (

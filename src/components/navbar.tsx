@@ -1,7 +1,7 @@
 "use client";
 
 import { type MouseEvent } from "react";
-import { XingIcon } from "@hugeicons/core-free-icons";
+import { CodeXmlIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 
 import { Button } from "@/components/ui/button";
@@ -38,8 +38,11 @@ export default function Navbar() {
           variant="ghost"
           className="px-0 text-lg italic sm:text-xl"
         >
-          <HugeiconsIcon icon={XingIcon} className="size-8" />
-          Priyanshu
+          <HugeiconsIcon
+            strokeWidth={2}
+            icon={CodeXmlIcon}
+            className="size-8"
+          />
         </LinkButton>
         <div className="gap-3 max-sm:hidden">
           {SECTIONS.map((section) => (
