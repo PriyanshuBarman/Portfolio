@@ -1,4 +1,5 @@
 import {
+  SiBaseui,
   SiClevercloud,
   SiExpress,
   SiFoodpanda,
@@ -14,6 +15,7 @@ import {
   SiNetlify,
   SiNextdotjs,
   SiNodedotjs,
+  SiPostgresql,
   SiPostman,
   SiPrisma,
   SiRadixui,
@@ -33,8 +35,8 @@ import {
 export const TECH_STACK = [
   { name: "TypeScript", icon: SiTypescript, iconColor: "#3178C6" },
   { name: "JavaScript", icon: SiJavascript, iconColor: "#F7DF1E" },
-  { name: "React", icon: SiReact, iconColor: "#61DAFB" },
   { name: "Next.js", icon: SiNextdotjs, iconColor: "#000000" },
+  { name: "React", icon: SiReact, iconColor: "#61DAFB" },
 
   { name: "Node.js", icon: SiNodedotjs, iconColor: "#5FA04E" },
   { name: "Express.js", icon: SiExpress, iconColor: "#000000" },
@@ -42,15 +44,17 @@ export const TECH_STACK = [
 
   { name: "Redis", icon: SiRedis, iconColor: "#FF4438" },
   { name: "MySQL", icon: SiMysql, iconColor: "#4479A1" },
+  { name: "PostgreSQL", icon: SiPostgresql, iconColor: "#4169E1" },
   { name: "MongoDB", icon: SiMongodb, iconColor: "#47A248" },
   { name: "Prisma", icon: SiPrisma, iconColor: "#2D3748" },
   { name: "Mongoose", icon: SiMongoose, iconColor: "#880000" },
 
   { name: "TanStack Query", icon: SiReactquery, iconColor: "#000000" },
   { name: "Zustand", icon: SiFoodpanda, iconColor: "#000000" },
-  { name: "Redux", icon: SiRedux, iconColor: "#764ABC" },
+  { name: "Redux Toolkit", icon: SiRedux, iconColor: "#764ABC" },
 
   { name: "ShadcnUI", icon: SiShadcnui, iconColor: "#000000" },
+  { name: "Base UI", icon: SiBaseui, iconColor: "##EDEDED" },
   { name: "Radix UI", icon: SiRadixui, iconColor: "#000000" },
   { name: "Tailwind CSS", icon: SiTailwindcss, iconColor: "#06B6D4" },
   { name: "Framer Motion", icon: SiFramer, iconColor: "#0055FF" },
@@ -74,4 +78,4 @@ export const TECH_STACK = [
   { name: "Netlify", icon: SiNetlify, iconColor: "#00C7B7" },
   { name: "Render", icon: SiRender, iconColor: "#000000" },
   { name: "Cleaver Cloud", icon: SiClevercloud, iconColor: "#171C36" },
-];
+] as const;

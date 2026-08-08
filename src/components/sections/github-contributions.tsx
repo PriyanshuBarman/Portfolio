@@ -8,7 +8,10 @@ import GitHubContributionGraph from "@/components/contribution-graph";
 export default function GitHubContributions() {
   const contributions = getGitHubContributions();
   return (
-    <section id="github-contributions" className="border-t border-dashed py-12">
+    <section
+      id="github-contributions"
+      className="border-t border-dashed px-0! py-12"
+    >
       <h2 className="mb-4 px-4 text-xl font-semibold sm:text-2xl">
         GitHub Contributions
       </h2>

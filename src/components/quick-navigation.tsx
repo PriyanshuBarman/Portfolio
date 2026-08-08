@@ -36,7 +36,7 @@ export default function QuickNavigation() {
             key={section.id}
             tabIndex={-1}
             href={`#${section.id}`}
-            className="bg-ring/50 [&:target-current]:bg-foreground h-1 w-10 rounded-full transition-all duration-200 ease-in-out"
+            className="bg-ring/50 [&:target-current]:bg-foreground h-0.75 w-10 rounded-full transition-all duration-200 ease-in-out"
           />
         ))}
       </div>

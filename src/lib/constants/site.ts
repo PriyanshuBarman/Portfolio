@@ -21,8 +21,8 @@ export const META_THEME_COLORS = {
 };
 
 export const GITHUB_USERNAME = "priyanshubarman";
-export const X_USERNAME = "priyanshuwb";
 export const LINKEDIN_USERNAME = "priyanshubarman";
+export const X_USERNAME = "priyanshuwb";
 export const EMAIL_ID = "itspriyanshubarman@gmail.com";
 
 export const GITHUB_LINK = `https://github.com/${GITHUB_USERNAME}`;

@@ -19,4 +19,4 @@ export const EDUCATION = [
     year: "2020 - 2021",
     icon: Building02Icon,
   },
-];
+] as const;

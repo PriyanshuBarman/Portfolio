@@ -25,7 +25,7 @@ export default function Education() {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
-    <section id="education" className="border-t border-dashed px-4 py-10">
+    <section id="education" className="border-t border-dashed py-10">
       <div className="flex justify-between">
         <h2 className="text-xl font-semibold sm:text-2xl">Education</h2>
 

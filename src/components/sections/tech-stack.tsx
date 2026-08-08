@@ -25,7 +25,7 @@ export default function TechStack() {
   };
 
   return (
-    <section id="tech-stack" className="border-t border-dashed px-4 py-12">
+    <section id="tech-stack" className="border-t border-dashed py-12">
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-semibold sm:text-2xl">Tech stack</h2>
         <Button

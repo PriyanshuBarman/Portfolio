@@ -29,4 +29,4 @@ export const SOCIALS = [
     link: GMAIL_LINK,
     iconColor: "#EA4335",
   },
-];
+] as const;

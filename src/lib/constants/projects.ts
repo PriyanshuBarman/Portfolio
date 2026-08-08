@@ -12,6 +12,7 @@ import {
   SiReactrouter,
   SiRedux,
   SiShadcnui,
+  SiSocketdotio,
   SiTailwindcss,
   SiTypescript,
   SiZod,
@@ -20,16 +21,27 @@ import {
 import type { Projects } from "@/types/project";
 import { GITHUB_LINK } from "./site";
 
-export const PROJECTS: Projects = [
+export const PROJECTS = [
   {
-    name: "Vestify / 135+ users",
-    img: "/vestify.webp",
+    name: "Vestify / 150+ signups",
+    img: "/projects/vestify.webp",
     siteLink: "https://vestify.priyanshux.me?utm_source=portfolio",
     githubLink: `${GITHUB_LINK}/vestify`,
     description:
-      "A virtual investment platform that simulates real-world mutual fund investing. Featuring a Groww-inspired app UI.",
+      "A virtual investment platform that simulates real-world stocks & mutual fund investing. Featuring a Groww app inspired UI.",
+    features: [
+      "Invest in stocks & mutual funds using virtual money with zero financial risk.",
+      "Start virtual SIPs and learn how systematic investing works.",
+      "Step-Up SIPs with automatic fixed amount or percentage based SIP increases.",
+      "Track portfolio growth, returns, and performance across market conditions.",
+      "See how other investors are performing, their investment activity & portfolio allocation.",
+      "Send, receive, Scan & Pay your virtual money with others instantly—just like UPI.",
+      "Groww app inspired UI that feels like a real investing app.",
+    ],
     techStack: [
       { name: "React.js", icon: SiReact, iconColor: "#61DAFB" },
+      { name: "TypeScript", icon: SiTypescript, iconColor: "#3178C6" },
+      { name: "Socket.io", icon: SiSocketdotio, iconColor: "#010101" },
       { name: "Node.js", icon: SiNodedotjs, iconColor: "#5FA04E" },
       { name: "Express.js", icon: SiExpress, iconColor: "#000000" },
       { name: "Prisma", icon: SiPrisma, iconColor: "#2D3748" },
@@ -40,27 +52,43 @@ export const PROJECTS: Projects = [
         iconColor: "#2088FF",
       },
       { name: "Tanstack Query", icon: SiReactquery, iconColor: "#000000" },
-      { name: "Redux toolkit", icon: SiRedux, iconColor: "#764ABC" },
+      { name: "Redux Toolkit", icon: SiRedux, iconColor: "#764ABC" },
       { name: "ShadcnUI", icon: SiShadcnui, iconColor: "#000000" },
       { name: "Zod", icon: SiZod, iconColor: "#408AFF" },
     ],
+  },
+  {
+    name: "ResizePedia (in progress)",
+    img: "/projects/resizepedia.webp",
+    siteLink: "https://resizepedia.priyanshux.me?utm_source=portfolio",
+    githubLink: `${GITHUB_LINK}/resizepedia`,
+    description:
+      "A privacy-first document & image toolkit for preparing files according to the requirements of different applications and online portals.",
     features: [
-      "Invest in mutual funds using virtual money with zero financial risk.",
-      "Start virtual SIPs in mutual funds and learn how systematic investing works.",
-      "Step-Up SIPs with automatic fixed amount or percentage based SIP increases.",
-      "Track portfolio growth, returns, and performance across market conditions.",
-      "See how other investors are performing, their investment activity & portfolio allocation.",
-      "Send, receive, Scan & Pay your virtual money with others instantly—just like UPI.",
-      "Groww app inspired UI that feels like a real investing app.",
+      "Fully client-side processing with no server uploads, files never leave the user's device.",
+      "Automatic resizing, compression, and format conversion based on the specific requirements of each application portal.",
+      "Additional tools including image cropper, resizer, rotator, compressor, image-to-PDF converter, and PDF compressor.",
+      "Supports popular application presets such as PAN Card / SSC Exam Photo & Signature Resizer.",
+    ],
+    techStack: [
+      { name: "Next.js", icon: SiNextdotjs, iconColor: "#000000" },
+      { name: "TypeScript", icon: SiTypescript, iconColor: "#3178C6" },
+      { name: "ShadcnUI", icon: SiShadcnui, iconColor: "#000000" },
     ],
   },
   {
     name: "Progoti",
-    img: "/progoti.webp",
+    img: "/projects/progoti.webp",
     siteLink: "https://progoti.in?utm_source=portfolio",
     githubLink: `${GITHUB_LINK}/progoti`,
     description:
       "An educational platform for West Bengal board exams (Previous year questions, Mock tests, MCQ tests, Suggestions etc.)",
+    features: [
+      "Chapter-wise MCQ practice.",
+      "Mock tests with scoring and performance tracking.",
+      "Previous year question papers.",
+      "Subject-wise suggestions and exam-focused study resources.",
+    ],
     techStack: [
       { name: "Next.js", icon: SiNextdotjs, iconColor: "#000000" },
       { name: "TypeScript", icon: SiTypescript, iconColor: "#3178C6" },
@@ -68,26 +96,13 @@ export const PROJECTS: Projects = [
       { name: "Zustand", icon: SiFoodpanda, iconColor: "#000000" },
       { name: "ShadcnUI", icon: SiShadcnui, iconColor: "#000000" },
     ],
-    features: [
-      "Chapter-wise MCQ practice.",
-      "Mock tests with scoring and performance tracking.",
-      "Previous year question papers.",
-      "Subject-wise suggestions and exam-focused study resources.",
-    ],
   },
   {
     name: "Mutual Fund Api",
-    img: "/mutual-fund-api.webp",
+    img: "/projects/mutual-fund-api.webp",
     githubLink: `${GITHUB_LINK}/Mutual-Fund-Api`,
     description:
       "A unified mutual fund API that aggregates data from MfApi.in and unofficial Kuvera API into a single structured source, powering Vestify.",
-    techStack: [
-      { name: "Node.js", icon: SiNodedotjs, iconColor: "#5FA04E" },
-      { name: "Express.js", icon: SiExpress, iconColor: "#000000" },
-      { name: "MySQL", icon: SiMysql, iconColor: "#4479A1" },
-      { name: "Github Actions", icon: SiGithubactions, iconColor: "#2088FF" },
-      { name: "Prisma", icon: SiPrisma, iconColor: "#2D3748" },
-    ],
     features: [
       "Search API : Search funds by name, AMC, or category.",
       "Fund data API : Get detailed fund information by ISIN, code, or scheme code.",
@@ -96,40 +111,47 @@ export const PROJECTS: Projects = [
       "Categories API : Get all fund categories & subcategories, and get fund's rank in category with fund returns vs category average returns (1Y, 3Y, 5Y).",
       "Fund Managers API : Get all funds managed by specific fund managers.",
     ],
+    techStack: [
+      { name: "Node.js", icon: SiNodedotjs, iconColor: "#5FA04E" },
+      { name: "Express.js", icon: SiExpress, iconColor: "#000000" },
+      { name: "MySQL", icon: SiMysql, iconColor: "#4479A1" },
+      { name: "Github Actions", icon: SiGithubactions, iconColor: "#2088FF" },
+      { name: "Prisma", icon: SiPrisma, iconColor: "#2D3748" },
+    ],
   },
   {
     name: "Prime Weather",
-    img: "/primeweather.webp",
+    img: "/projects/primeweather.webp",
     siteLink: "https://weather.priyanshux.me?utm_source=portfolio",
     githubLink: `${GITHUB_LINK}/primeweather`,
     description:
       "A modern weather app with a sleek design and customizable widgets, geolocation, city search, etc.",
-    techStack: [
-      { name: "React.js", icon: SiReact, iconColor: "#61DAFB" },
-      { name: "React Router", icon: SiReactrouter, iconColor: "#CA4245" },
-      { name: "Tailwind", icon: SiTailwindcss, iconColor: "#06B6D4" },
-    ],
     features: [
       "Clean and minimalist UI",
       "Get weather by your location or by searching for a city",
       "Hide or unhide widgets, and customize the dashboard according to your preference",
     ],
+    techStack: [
+      { name: "React.js", icon: SiReact, iconColor: "#61DAFB" },
+      { name: "React Router", icon: SiReactrouter, iconColor: "#CA4245" },
+      { name: "Tailwind", icon: SiTailwindcss, iconColor: "#06B6D4" },
+    ],
   },
   {
     name: "Qr Code Scanner",
-    img: "/qr-code-scanner.webp",
+    img: "/projects/qr-code-scanner.webp",
     siteLink: "https://scan.priyanshux.me?utm_source=portfolio",
     githubLink: `${GITHUB_LINK}/QrCodeScanner`,
     description:
       "A QR code scanner built using qr-scanner package for Vestify. Later integrated into the main Vestify platform.",
+    features: [
+      "Scan any QR code and get its content.",
+      "Integrated into Vestify platform",
+    ],
     techStack: [
       { name: "React.js", icon: SiReact, iconColor: "#61DAFB" },
       { name: "ShadcnUI", icon: SiShadcnui, iconColor: "#000000" },
       { name: "Tailwind", icon: SiTailwindcss, iconColor: "#06B6D4" },
     ],
-    features: [
-      "Scan any QR code and get its content.",
-      "Integrated into Vestify platform",
-    ],
   },
-];
+] as const satisfies Projects;

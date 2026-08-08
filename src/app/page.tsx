@@ -1,6 +1,7 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import QuickNavigation from "@/components/quick-navigation";
+import About from "@/components/sections/about";
 import Education from "@/components/sections/education";
 import GitHubContributions from "@/components/sections/github-contributions";
 import ProfileHeader from "@/components/sections/profile-header";
@@ -13,8 +14,9 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <main className="mx-auto max-w-3xl *:[[id]]:scroll-mt-18">
+      <main className="mx-auto max-w-3xl [&_section]:px-4 sm:[&_section]:px-6 md:[&_section]:px-8 *:[[id]]:scroll-mt-18">
         <ProfileHeader />
+        <About />
         <Projects />
         <TechStack />
         <GitHubContributions />

@@ -1,52 +1,56 @@
 import Image from "next/image";
-import { LicenseIcon } from "@hugeicons/core-free-icons";
+import { File02Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
+import { TbRosetteDiscountCheckFilled } from "react-icons/tb";
 
 import { RESUME_LINK } from "@/lib/constants/site";
 import { SOCIALS } from "@/lib/constants/socials";
-import { LinkButton } from "@/components/ui/link-button";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { LinkButton } from "../ui/link-button";
 
-export default function NewProfileHeader() {
+export default function ProfileHeader() {
   return (
-    <section id="profile-header" className="scroll-mt-36!">
-      <div className="relative mt-14 px-4 pb-10 sm:mt-18 sm:flex sm:flex-row-reverse sm:items-center sm:justify-between sm:gap-8">
-        {/* Group 1  */}
+    <section id="profile-header">
+      <div className="relative mt-14 pb-8 sm:mt-18 sm:flex sm:gap-12">
         <Image
-          src="/avatar.png"
-          width={1024}
-          height={1024}
+          src="/avatar.jpeg"
+          width={1546}
+          height={1450}
           alt="avatar"
-          className="bg-accent size-32 rounded-full sm:size-44"
+          className="bg-accent size-30 rounded-full object-cover sm:size-43"
         />
 
-        {/* Group 2 - Title,Description & Buttons */}
+        {/* Title & Description */}
         <div>
-          <h1 className="mt-6 text-2xl font-semibold sm:mt-8 sm:text-4xl">
-            Hey, I&apos;m Priyanshu
-          </h1>
-
-          <div className="mt-3 space-y-4 sm:mt-6 sm:space-y-8">
-            <p className="text-muted-foreground sm:text-lg">
-              I build Full-Stack applications end-to-end, from database schema
-              to deployed UI. Passionate about writing clean, maintainable code.
+          <div>
+            <div className="mt-4 flex items-center gap-2 sm:gap-3">
+              <h1 className="text-2xl font-semibold tracking-tight sm:text-4xl sm:tracking-normal">
+                Priyanshu Barman
+              </h1>
+              <TbRosetteDiscountCheckFilled className="size-5 text-blue-500 sm:size-6" />
+            </div>
+            <p className="text-muted-foreground mt-1 ml-0.5 tracking-tight sm:mt-3 sm:text-lg">
+              Full-Stack Developer • India
             </p>
+          </div>
 
-            {/* Buttons */}
-            <div className="space-x-2 sm:space-x-3">
+          {/* Buttons */}
+          <div className="mt-3 flex flex-col-reverse gap-4 sm:mt-5 sm:flex sm:flex-row sm:items-center">
+            <div className="flex items-center gap-3">
               <LinkButton
                 href={RESUME_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-8.5 rounded-xl px-3 text-xs font-normal hover:scale-99 sm:h-9"
+                className="h-8.5 rounded-xl px-3 text-xs font-normal sm:h-9"
               >
-                <HugeiconsIcon icon={LicenseIcon} />
+                <HugeiconsIcon icon={File02Icon} />
                 Resume
               </LinkButton>
+
               {SOCIALS.map((social) => (
                 <Tooltip key={social.name}>
                   <TooltipTrigger
@@ -58,7 +62,7 @@ export default function NewProfileHeader() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={
-                          social.name === "Email"
+                          social.name === "Gmail"
                             ? "Send me an email"
                             : `Visit ${social.name} profile`
                         }

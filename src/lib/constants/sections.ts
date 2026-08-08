@@ -23,4 +23,4 @@ export const SECTIONS = [
     name: "Socials",
     id: "socials",
   },
-];
+] as const;
