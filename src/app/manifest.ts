@@ -46,13 +46,13 @@ export default function manifest(): MetadataRoute.Manifest {
       {
         src: "https://res.cloudinary.com/dmtp3bdzx/image/upload/v1780823781/Screenshot_2026-06-07_144454_q6w1bk.png",
         type: "image/png",
-        sizes: "1918x1078",
+        sizes: "1919x1079",
         form_factor: "wide",
       },
       {
         src: "https://res.cloudinary.com/dmtp3bdzx/image/upload/v1780823831/Screenshot_2026-06-07_144623_fiyfue.png",
         type: "image/png",
-        sizes: "1918x1078",
+        sizes: "1919x1079",
         form_factor: "wide",
       },
     ],

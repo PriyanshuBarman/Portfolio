@@ -30,7 +30,9 @@ export default function ThemeSwitcher() {
   );
 
   if (!isMounted) {
-    return <div className="flex h-8.5 w-25.5" />;
+    return (
+      <div className="bg-accent flex h-8.5 w-25.5 animate-pulse rounded-full" />
+    );
   }
 
   return (

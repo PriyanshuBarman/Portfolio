@@ -5,7 +5,7 @@ export const SITE_INFO = {
   description:
     "Hi, I'm Priyanshu, a Full-Stack Developer. I build products that solve real problems.",
   ogImage:
-    "https://res.cloudinary.com/dmtp3bdzx/image/upload/v1780823781/Screenshot_2026-06-07_144454_q6w1bk.png",
+    "https://res.cloudinary.com/dmtp3bdzx/image/upload/v1780823831/Screenshot_2026-06-07_144623_fiyfue.png",
   keywords: [
     "Priyanshu Barman",
     "Priyanshu Barman Portfolio",
