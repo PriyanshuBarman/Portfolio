@@ -8,11 +8,11 @@ import {
 import { HugeiconsIcon } from "@hugeicons/react";
 import { motion } from "motion/react";
 
-import { TECH_STACK } from "@/lib/constants/tech-stack";
 import { cn } from "@/lib/utils";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { TECH_STACK } from "@/constants/tech-stack";
 
 export default function TechStack() {
   const isMobile = useIsMobile();
@@ -25,7 +25,7 @@ export default function TechStack() {
   };
 
   return (
-    <section id="tech-stack" className="border-t border-dashed py-12">
+    <section id="tech-stack" className="mt-6 border-t border-dashed py-12">
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-semibold sm:text-2xl">Tech stack</h2>
         <Button

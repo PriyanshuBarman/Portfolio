@@ -2,8 +2,8 @@ import { Suspense } from "react";
 import { Loading03Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 
-import { getGitHubContributions } from "@/lib/get-contributions";
 import GitHubContributionGraph from "@/components/contribution-graph";
+import { getGitHubContributions } from "@/utils/get-contributions";
 
 export default function GitHubContributions() {
   const contributions = getGitHubContributions();

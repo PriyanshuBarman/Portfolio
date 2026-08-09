@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-import { getOrCreateVisitorId } from "@/lib/fingerprint";
 import { cn } from "@/lib/utils";
+import { getOrCreateVisitorId } from "@/utils/fingerprint";
 
 export function VisitorCount({ className }: { className?: string }) {
   const [visitorCount, setVisitorCount] = useState<number | null>(null);

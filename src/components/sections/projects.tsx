@@ -4,10 +4,10 @@ import { useState } from "react";
 import { ChevronDownIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 
-import { PROJECTS } from "@/lib/constants/projects";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import ProjectCard from "@/components/project-card";
+import { PROJECTS } from "@/constants/projects";
 
 export default function Projects() {
   const [isViewAll, setIsViewAll] = useState(false);
@@ -17,7 +17,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col border-t border-dashed py-12 sm:mt-6"
+      className="flex flex-col border-t border-dashed py-6 sm:mt-4 sm:py-8"
     >
       <h2 className="text-xl font-semibold sm:text-2xl">Projects</h2>
 

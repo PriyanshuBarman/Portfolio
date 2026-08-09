@@ -63,7 +63,7 @@ export const PROJECTS = [
     siteLink: "https://resizepedia.priyanshux.me?utm_source=portfolio",
     githubLink: `${GITHUB_LINK}/resizepedia`,
     description:
-      "A privacy-first document & image toolkit for preparing files according to the requirements of different applications and online portals.",
+      "A privacy-first document & image toolkit for preparing files according to the requirements of different online applications and portals.",
     features: [
       "Fully client-side processing with no server uploads, files never leave the user's device.",
       "Automatic resizing, compression, and format conversion based on the specific requirements of each application portal.",
@@ -101,6 +101,7 @@ export const PROJECTS = [
     name: "Mutual Fund Api",
     img: "/projects/mutual-fund-api.webp",
     githubLink: `${GITHUB_LINK}/Mutual-Fund-Api`,
+    siteLink: "https://api.mf.priyanshux.me/api/v1/mutual-funds",
     description:
       "A unified mutual fund API that aggregates data from MfApi.in and unofficial Kuvera API into a single structured source, powering Vestify.",
     features: [

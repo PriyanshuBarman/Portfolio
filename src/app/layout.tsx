@@ -2,10 +2,10 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
-import { META_THEME_COLORS, SITE_INFO, X_USERNAME } from "@/lib/constants/site";
 import { cn } from "@/lib/utils";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/theme-provider";
+import { META_THEME_COLORS, SITE_INFO, X_USERNAME } from "@/constants/site";
 
 import "./globals.css";
 
@@ -17,6 +17,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_INFO.url),
+  alternates: {
+    canonical: "/",
+  },
   title: SITE_INFO.name,
   description: SITE_INFO.description,
   keywords: SITE_INFO.keywords,
@@ -31,12 +35,28 @@ export const metadata: Metadata = {
     title: SITE_INFO.name,
     description: SITE_INFO.description,
     siteName: SITE_INFO.name,
+    images: [
+      {
+        url: SITE_INFO.ogImage,
+        width: 1200,
+        height: 630,
+        alt: SITE_INFO.name,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: SITE_INFO.name,
     description: SITE_INFO.description,
     creator: X_USERNAME,
+    images: [
+      {
+        url: SITE_INFO.ogImage,
+        width: 1200,
+        height: 630,
+        alt: SITE_INFO.name,
+      },
+    ],
   },
 };
 

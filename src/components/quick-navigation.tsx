@@ -2,7 +2,7 @@
 
 import type { MouseEvent } from "react";
 
-import { SECTIONS } from "@/lib/constants/sections";
+import { SECTIONS } from "@/constants/sections";
 
 /**
  * This component showcases how simple it is to build a scroll-spy / quick navigation component using
@@ -42,16 +42,17 @@ export default function QuickNavigation() {
       </div>
 
       {/* Popover */}
-      <div className="bg-accent absolute top-1/2 -right-4 hidden max-h-[50vh] w-3xs -translate-y-1/2 flex-col gap-2 overflow-y-auto rounded-2xl border p-3 transition-all duration-300 group-hover:flex">
+      <div className="bg-accent absolute top-1/2 -right-4 hidden max-h-[50vh] w-3xs -translate-y-1/2 flex-col gap-3 overflow-y-auto rounded-2xl border p-3 transition-all duration-300 group-hover:flex">
         {SECTIONS.map((section) => (
           <a
             key={section.id}
             tabIndex={-1}
             href={`#${section.id}`}
             onClick={(e) => handleClick(e, section.id)}
-            className="hover:bg-background [&:target-current]:bg-foreground [&:target-current]:text-background rounded-lg px-3 py-2 text-sm font-medium"
+            className="hover:bg-background [&:target-current]:bg-foreground [&:target-current]:text-background flex items-center justify-between rounded-lg px-3 py-2 text-sm font-medium"
           >
             {section.name}
+            <div className="bg-accent h-1.5 w-6 rounded-2xl" />
           </a>
         ))}
       </div>

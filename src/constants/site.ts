@@ -1,9 +1,11 @@
 export const SITE_INFO = {
   name: "Priyanshu Barman",
   shortName: "Priyanshu",
-  url: process.env.NEXT_PUBLIC_SITE_URL,
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "",
   description:
     "Hi, I'm Priyanshu, a Full-Stack Developer. I build products that solve real problems.",
+  ogImage:
+    "https://res.cloudinary.com/dmtp3bdzx/image/upload/v1780823781/Screenshot_2026-06-07_144454_q6w1bk.png",
   keywords: [
     "Priyanshu Barman",
     "Priyanshu Barman Portfolio",

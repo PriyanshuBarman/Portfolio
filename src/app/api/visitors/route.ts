@@ -1,7 +1,11 @@
 import { headers } from "next/headers";
 import { NextResponse, type NextRequest } from "next/server";
 
-import { generateVisitorId, getVisitorCount, trackVisit } from "@/lib/visitors";
+import {
+  generateVisitorId,
+  getVisitorCount,
+  trackVisit,
+} from "@/utils/visitors";
 
 export async function POST(request: NextRequest) {
   try {

@@ -4,10 +4,10 @@ import { LinkButton } from "@/components/ui/link-button";
 export default function PLogo() {
   return (
     <LinkButton
-      href="#"
+      href="/"
       size="icon-lg"
       variant="ghost"
-      className="size-12 overflow-hidden rounded-full"
+      className="size-11 overflow-hidden rounded-full sm:size-12"
     >
       <Avatar className="size-full after:border-transparent dark:hidden">
         <AvatarImage alt="p logo" src="/p-logo.png" className="scale-150" />

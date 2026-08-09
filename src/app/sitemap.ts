@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-import { SITE_INFO } from "@/lib/constants/site";
+import { SITE_INFO } from "@/constants/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
