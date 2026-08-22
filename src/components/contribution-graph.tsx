@@ -50,7 +50,7 @@ export default function GitHubContributionGraph({
         )}
       </ContributionGraphCalendar>
 
-      <ContributionGraphFooter className="px-4">
+      <ContributionGraphFooter className="px-4 sm:px-6 md:px-8">
         <ContributionGraphTotalCount>
           {({ totalCount }) => (
             <div className="text-muted-foreground">

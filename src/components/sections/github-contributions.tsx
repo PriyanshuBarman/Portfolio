@@ -12,7 +12,7 @@ export default function GitHubContributions() {
       id="github-contributions"
       className="border-t border-dashed px-0! py-12"
     >
-      <h2 className="mb-4 px-4 text-xl font-semibold sm:text-2xl">
+      <h2 className="mb-4 px-4 text-xl font-semibold sm:px-6 sm:text-2xl">
         GitHub Contributions
       </h2>
 

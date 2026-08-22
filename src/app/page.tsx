@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <main className="mx-auto max-w-3xl [&_section]:px-4 sm:[&_section]:px-6 md:[&_section]:px-8 *:[[id]]:scroll-mt-18">
+      <main className="mx-auto max-w-200 [&_section]:px-4 sm:[&_section]:px-6 md:[&_section]:px-8 *:[[id]]:scroll-mt-18">
         <ProfileHeader />
         <About />
         <Projects />

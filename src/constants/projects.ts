@@ -58,7 +58,7 @@ export const PROJECTS = [
     ],
   },
   {
-    name: "ResizePedia (in progress)",
+    name: "ResizePedia",
     img: "/projects/resizepedia.webp",
     siteLink: "https://resizepedia.priyanshux.me?utm_source=portfolio",
     githubLink: `${GITHUB_LINK}/resizepedia`,

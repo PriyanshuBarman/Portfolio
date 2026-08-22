@@ -1,7 +1,7 @@
 import ThemeSwitcher from "@/components/theme-switcher";
 import PLogo from "./p-logo";
 
-export const SECTIONS = [
+const SECTIONS = [
   {
     name: "Projects",
     id: "projects",

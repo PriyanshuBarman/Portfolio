@@ -6,6 +6,12 @@ import { GITHUB_LINK, GMAIL_LINK, LINKEDIN_LINK, TWITTER_LINK } from "./site";
 
 export const SOCIALS = [
   {
+    name: "Gmail",
+    icon: SiGmail,
+    link: GMAIL_LINK,
+    iconColor: "#EA4335",
+  },
+  {
     name: "Github",
     icon: FaGithub,
     link: GITHUB_LINK,
@@ -22,11 +28,5 @@ export const SOCIALS = [
     icon: FaXTwitter,
     link: TWITTER_LINK,
     iconColor: "#000000",
-  },
-  {
-    name: "Gmail",
-    icon: SiGmail,
-    link: GMAIL_LINK,
-    iconColor: "#EA4335",
   },
 ] as const;

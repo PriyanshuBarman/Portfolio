@@ -1,6 +1,7 @@
 "use client";
 
 import type { MouseEvent } from "react";
+import { HugeiconsIcon } from "@hugeicons/react";
 
 import { SECTIONS } from "@/constants/sections";
 
@@ -11,7 +12,7 @@ import { SECTIONS } from "@/constants/sections";
  * To use or adapt this component:
  * 1. Add matching `id` attributes to your section tags (e.g., `<section id="about">`).
  * 2. Add those IDs to your SECTIONS constant, structured as an array of objects:
- *    `const SECTIONS = [{ name: "About", id: "about" }, ...]`
+ *    `const SECTIONS = [{ name: "About", id: "about", icon: UserIcon }, ...]`
  * 3. To customize active colors/styles, modify the arbitrary selector values already present
  *    on the anchor tags (e.g., `[&:target-current]:bg-foreground`).
  */
@@ -42,17 +43,18 @@ export default function QuickNavigation() {
       </div>
 
       {/* Popover */}
-      <div className="bg-accent absolute top-1/2 -right-4 hidden max-h-[50vh] w-3xs -translate-y-1/2 flex-col gap-3 overflow-y-auto rounded-2xl border p-3 transition-all duration-300 group-hover:flex">
+      <div className="bg-accent absolute top-1/2 -right-4 hidden max-h-[50vh] w-68 -translate-y-1/2 flex-col gap-3 overflow-y-auto rounded-2xl border p-3 transition-all duration-300 group-hover:flex">
         {SECTIONS.map((section) => (
           <a
             key={section.id}
             tabIndex={-1}
             href={`#${section.id}`}
             onClick={(e) => handleClick(e, section.id)}
-            className="hover:bg-background [&:target-current]:bg-foreground [&:target-current]:text-background flex items-center justify-between rounded-lg px-3 py-2 text-sm font-medium"
+            className="hover:bg-background [&:target-current]:bg-foreground [&:target-current]:text-background flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium"
           >
+            <HugeiconsIcon icon={section.icon} />
             {section.name}
-            <div className="bg-accent h-1.5 w-6 rounded-2xl" />
+            <div className="bg-accent ml-auto h-1.5 w-6 rounded-2xl" />
           </a>
         ))}
       </div>
