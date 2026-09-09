@@ -1,4 +1,12 @@
 import { Building02Icon, Building03Icon } from "@hugeicons/core-free-icons";
+import type { IconSvgElement } from "@hugeicons/react";
+
+interface Education {
+  board: string;
+  course: string;
+  year: string;
+  icon: IconSvgElement;
+}
 
 export const EDUCATION = [
   {
@@ -19,4 +27,4 @@ export const EDUCATION = [
     year: "2020 - 2021",
     icon: Building02Icon,
   },
-] as const;
+] as const satisfies readonly Education[];

@@ -1,8 +1,16 @@
+import type { IconType } from "react-icons";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 
 import { GITHUB_LINK, GMAIL_LINK, LINKEDIN_LINK, TWITTER_LINK } from "./site";
+
+interface Social {
+  name: string;
+  icon: IconType;
+  link: string;
+  iconColor: string;
+}
 
 export const SOCIALS = [
   {
@@ -29,4 +37,4 @@ export const SOCIALS = [
     link: TWITTER_LINK,
     iconColor: "#000000",
   },
-] as const;
+] as const satisfies readonly Social[];

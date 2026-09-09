@@ -1,3 +1,4 @@
+import type { IconType } from "react-icons";
 import {
   SiBaseui,
   SiClevercloud,
@@ -31,6 +32,12 @@ import {
   SiVercel,
   SiZod,
 } from "react-icons/si";
+
+interface TechStack {
+  name: string;
+  icon: IconType;
+  iconColor: string;
+}
 
 export const TECH_STACK = [
   { name: "TypeScript", icon: SiTypescript, iconColor: "#3178C6" },
@@ -78,4 +85,4 @@ export const TECH_STACK = [
   { name: "Netlify", icon: SiNetlify, iconColor: "#00C7B7" },
   { name: "Render", icon: SiRender, iconColor: "#000000" },
   { name: "Cleaver Cloud", icon: SiClevercloud, iconColor: "#171C36" },
-] as const;
+] as const satisfies readonly TechStack[];

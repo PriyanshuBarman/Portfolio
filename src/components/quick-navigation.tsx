@@ -3,7 +3,7 @@
 import type { MouseEvent } from "react";
 import { HugeiconsIcon } from "@hugeicons/react";
 
-import { SECTIONS } from "@/constants/sections";
+import { SECTIONS } from "@/config/sections";
 
 /**
  * This component showcases how simple it is to build a scroll-spy / quick navigation component using

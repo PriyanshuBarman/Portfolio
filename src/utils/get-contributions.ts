@@ -1,7 +1,7 @@
 import { unstable_cache } from "next/cache";
 
+import { GITHUB_USERNAME } from "@/config/site";
 import type { Activity } from "@/components/ui/contribution-graph";
-import { GITHUB_USERNAME } from "@/constants/site";
 
 type GitHubContributionsResponse = {
   contributions: Activity[];

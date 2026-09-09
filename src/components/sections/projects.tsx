@@ -4,10 +4,10 @@ import { useState } from "react";
 import { ChevronDownIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 
+import { PROJECTS } from "@/config/projects";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import ProjectCard from "@/components/project-card";
-import { PROJECTS } from "@/constants/projects";
 
 export default function Projects() {
   const [isViewAll, setIsViewAll] = useState(false);

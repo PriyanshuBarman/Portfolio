@@ -2,10 +2,10 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
+import { META_THEME_COLORS, SITE_INFO, X_USERNAME } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/theme-provider";
-import { META_THEME_COLORS, SITE_INFO, X_USERNAME } from "@/constants/site";
 
 import "./globals.css";
 

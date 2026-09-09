@@ -1,3 +1,4 @@
+import type { IconType } from "react-icons";
 import {
   SiExpress,
   SiFoodpanda,
@@ -18,12 +19,25 @@ import {
   SiZod,
 } from "react-icons/si";
 
-import type { Projects } from "@/types/project";
 import { GITHUB_LINK } from "./site";
+
+export interface Project {
+  name: string;
+  img: string;
+  siteLink: string;
+  githubLink: string;
+  description: string;
+  features: string[];
+  techStack: {
+    name: string;
+    icon: IconType;
+    iconColor: string;
+  }[];
+}
 
 export const PROJECTS = [
   {
-    name: "Vestify / 150+ signups",
+    name: "Vestify / 160+ signups",
     img: "/projects/vestify.webp",
     siteLink: "https://vestify.priyanshux.me?utm_source=portfolio",
     githubLink: `${GITHUB_LINK}/vestify`,
@@ -155,4 +169,4 @@ export const PROJECTS = [
       { name: "Tailwind", icon: SiTailwindcss, iconColor: "#06B6D4" },
     ],
   },
-] as const satisfies Projects;
+] as const satisfies readonly Project[];

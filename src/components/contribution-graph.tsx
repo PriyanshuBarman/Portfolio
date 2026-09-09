@@ -2,6 +2,7 @@
 
 import { use } from "react";
 
+import { GITHUB_LINK } from "@/config/site";
 import {
   ContributionGraph,
   ContributionGraphBlock,
@@ -11,7 +12,6 @@ import {
   ContributionGraphTotalCount,
   type Activity,
 } from "@/components/ui/contribution-graph";
-import { GITHUB_LINK } from "@/constants/site";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 export default function GitHubContributionGraph({

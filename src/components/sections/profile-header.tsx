@@ -3,13 +3,13 @@ import { File02Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { TbRosetteDiscountCheckFilled } from "react-icons/tb";
 
+import { RESUME_LINK } from "@/config/site";
+import { SOCIALS } from "@/config/socials";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { RESUME_LINK } from "@/constants/site";
-import { SOCIALS } from "@/constants/socials";
 import { LinkButton } from "../ui/link-button";
 
 export default function ProfileHeader() {

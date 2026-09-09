@@ -8,11 +8,11 @@ import {
 import { HugeiconsIcon } from "@hugeicons/react";
 import { motion } from "motion/react";
 
+import { TECH_STACK } from "@/config/tech-stack";
 import { cn } from "@/lib/utils";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { TECH_STACK } from "@/constants/tech-stack";
 
 export default function TechStack() {
   const isMobile = useIsMobile();

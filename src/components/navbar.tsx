@@ -1,21 +1,6 @@
 import ThemeSwitcher from "@/components/theme-switcher";
 import PLogo from "./p-logo";
 
-const SECTIONS = [
-  {
-    name: "Projects",
-    id: "projects",
-  },
-  {
-    name: "Tech Stack",
-    id: "tech-stack",
-  },
-  {
-    name: "Socials",
-    id: "socials",
-  },
-];
-
 export default function Navbar() {
   return (
     <nav className="bg-background/50 sticky top-0 z-50 backdrop-blur-xs">

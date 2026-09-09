@@ -1,3 +1,4 @@
+import { WORK_EXPERIENCE } from "@/config/work-experience";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Item,
@@ -7,7 +8,6 @@ import {
   ItemMedia,
   ItemTitle,
 } from "@/components/ui/item";
-import { WORK_EXPERIENCE } from "@/constants/work-experience";
 
 export default function WorkExperience() {
   return (
@@ -15,43 +15,34 @@ export default function WorkExperience() {
       <h2 className="text-xl font-semibold sm:text-2xl">Work Experience</h2>
 
       <ItemGroup className="pt-6">
-        {WORK_EXPERIENCE.map((experience) => (
-          <Item
-            key={`${experience.company}-${experience.role}`}
-            className="px-0"
-          >
+        {WORK_EXPERIENCE.map(({ company, role, location, period }) => (
+          <Item key={`${company.name}-${role}`} className="px-0 sm:gap-4">
             <ItemMedia>
               <Avatar className="size-8 after:border-none sm:size-10">
-                <AvatarImage src={experience.logo} alt={experience.company} />
+                <AvatarImage src={company.logo} alt={company.name} />
                 <AvatarFallback />
               </Avatar>
             </ItemMedia>
             <ItemContent>
-              {experience.link ? (
-                <a
-                  href={experience.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <ItemTitle className="font-[450] sm:text-lg">
-                    {experience.company}
-                  </ItemTitle>
-                </a>
-              ) : (
+              <a
+                href={company.website}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ItemTitle className="font-[450] sm:text-lg">
-                  {experience.company}
+                  {company.name}
                 </ItemTitle>
-              )}
+              </a>
               <ItemDescription className="text-xs sm:text-sm">
-                {experience.role}
+                {role}
               </ItemDescription>
             </ItemContent>
             <ItemContent>
               <ItemDescription className="text-xs sm:text-sm">
-                {experience.location}
+                {location}
               </ItemDescription>
               <ItemDescription className="text-xs sm:text-sm">
-                {experience.period}
+                {period}
               </ItemDescription>
             </ItemContent>
           </Item>

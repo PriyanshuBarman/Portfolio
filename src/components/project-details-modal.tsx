@@ -8,7 +8,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { AnimatePresence, motion } from "motion/react";
 import { FiGithub } from "react-icons/fi";
 
-import type { Project } from "@/types/project";
+import type { Project } from "@/config/projects";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";

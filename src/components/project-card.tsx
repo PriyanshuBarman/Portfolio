@@ -6,7 +6,7 @@ import { Link04Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { FiGithub } from "react-icons/fi";
 
-import type { Project } from "@/types/project";
+import type { Project } from "@/config/projects";
 import { cn } from "@/lib/utils";
 import {
   Tooltip,

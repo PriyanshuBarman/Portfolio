@@ -6,36 +6,43 @@ import {
   GraduationCapIcon,
   UserIcon,
 } from "@hugeicons/core-free-icons";
+import type { IconSvgElement } from "@hugeicons/react";
+
+interface Section {
+  id: string;
+  name: string;
+  icon: IconSvgElement;
+}
 
 export const SECTIONS = [
   {
-    name: "About",
     id: "profile-header",
+    name: "About",
     icon: UserIcon,
   },
   {
-    name: "Projects",
     id: "projects",
+    name: "Projects",
     icon: CodeFolderIcon,
   },
   {
-    name: "Tech Stack",
     id: "tech-stack",
+    name: "Tech Stack",
     icon: CodeXmlIcon,
   },
   {
-    name: "GitHub Contributions",
     id: "github-contributions",
+    name: "GitHub Contributions",
     icon: GitPullRequestIcon,
   },
   {
-    name: "Education",
     id: "education",
+    name: "Education",
     icon: GraduationCapIcon,
   },
   {
-    name: "Socials",
     id: "socials",
+    name: "Socials",
     icon: AtIcon,
   },
-] as const;
+] as const satisfies readonly Section[];
