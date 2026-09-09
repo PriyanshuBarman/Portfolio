@@ -47,8 +47,8 @@ export default function ProjectDetailsModal({
   if (isMobile) {
     return (
       <Drawer open={open} onOpenChange={onOpenChange}>
-        <DrawerContent className="pb-4 md:max-w-2xl md:rounded-3xl md:p-8!">
-          <DrawerHeader className="mt-4 gap-4 text-start! md:mt-0">
+        <DrawerContent className="pb-4">
+          <DrawerHeader className="mt-4 gap-4 text-start!">
             <div className="flex items-center justify-between">
               <DrawerTitle className="md:text-xl">{project.name}</DrawerTitle>
               <div className="flex items-center gap-2">
@@ -95,7 +95,7 @@ export default function ProjectDetailsModal({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="pb-4 md:max-w-2xl md:rounded-3xl md:p-8!">
+      <DialogContent className="pb-4 md:max-w-2xl md:p-8!">
         <DialogHeader className="mt-4 gap-4 text-start! md:mt-0">
           <div className="flex items-center justify-between">
             <DialogTitle className="md:text-xl">{project.name}</DialogTitle>

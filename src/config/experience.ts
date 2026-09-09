@@ -1,4 +1,4 @@
-interface WorkExperience {
+interface Experience {
   company: {
     name: string;
     logo: string;
@@ -9,7 +9,7 @@ interface WorkExperience {
   period: string;
 }
 
-export const WORK_EXPERIENCE = [
+export const EXPERIENCE = [
   {
     company: {
       name: "CareerCafe",
@@ -20,4 +20,4 @@ export const WORK_EXPERIENCE = [
     location: "Remote",
     period: "Aug 2026 - Present",
   },
-] as const satisfies readonly WorkExperience[];
+] as const satisfies readonly Experience[];

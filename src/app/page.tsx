@@ -3,12 +3,12 @@ import Navbar from "@/components/navbar";
 import QuickNavigation from "@/components/quick-navigation";
 import About from "@/components/sections/about";
 import Education from "@/components/sections/education";
+import Experience from "@/components/sections/experience";
 import GitHubContributions from "@/components/sections/github-contributions";
 import ProfileHeader from "@/components/sections/profile-header";
 import Projects from "@/components/sections/projects";
 import Socials from "@/components/sections/socials";
 import TechStack from "@/components/sections/tech-stack";
-import WorkExperience from "@/components/sections/work-experience";
 import ThemeToggle from "@/components/theme-toggle";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       <main className="mx-auto max-w-200 [&_section]:px-4 sm:[&_section]:px-6 md:[&_section]:px-8 *:[[id]]:scroll-mt-18">
         <ProfileHeader />
         <About />
-        <WorkExperience />
+        <Experience />
         <Projects />
         <TechStack />
         <GitHubContributions />

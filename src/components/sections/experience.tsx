@@ -1,4 +1,4 @@
-import { WORK_EXPERIENCE } from "@/config/work-experience";
+import { EXPERIENCE } from "@/config/experience";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Item,
@@ -9,13 +9,13 @@ import {
   ItemTitle,
 } from "@/components/ui/item";
 
-export default function WorkExperience() {
+export default function Experience() {
   return (
-    <section id="work-experience" className="border-t border-dashed py-10">
-      <h2 className="text-xl font-semibold sm:text-2xl">Work Experience</h2>
+    <section id="experience" className="border-t border-dashed py-10">
+      <h2 className="text-xl font-semibold sm:text-2xl">Experience</h2>
 
       <ItemGroup className="pt-6">
-        {WORK_EXPERIENCE.map(({ company, role, location, period }) => (
+        {EXPERIENCE.map(({ company, role, location, period }) => (
           <Item key={`${company.name}-${role}`} className="px-0 sm:gap-4">
             <ItemMedia>
               <Avatar className="size-8 after:border-none sm:size-10">
