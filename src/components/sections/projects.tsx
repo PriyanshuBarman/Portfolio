@@ -17,7 +17,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col border-t border-dashed py-6 sm:mt-4 sm:py-8"
+      className="flex flex-col border-t border-dashed py-10"
     >
       <h2 className="text-xl font-semibold sm:text-2xl">Projects</h2>
 

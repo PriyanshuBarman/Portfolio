@@ -67,7 +67,6 @@ export default function Education() {
               {EDUCATION.map((item) => (
                 <Item key={item.course}>
                   <ItemMedia
-                    role="listitem"
                     variant="icon"
                     className="ring-accent size-10 rounded-full ring-2 sm:size-11"
                   >
