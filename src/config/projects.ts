@@ -1,25 +1,5 @@
-import type { IconType } from "react-icons";
-import {
-  SiExpress,
-  SiFoodpanda,
-  SiGithubactions,
-  SiMongodb,
-  SiMysql,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiPrisma,
-  SiReact,
-  SiReactquery,
-  SiReactrouter,
-  SiRedux,
-  SiShadcnui,
-  SiSocketdotio,
-  SiTailwindcss,
-  SiTypescript,
-  SiZod,
-} from "react-icons/si";
-
 import { GITHUB_LINK } from "./site";
+import { SKILLS, type SkillItem } from "./skills";
 
 export interface Project {
   name: string;
@@ -28,16 +8,12 @@ export interface Project {
   githubLink: string;
   description: string;
   features: string[];
-  techStack: {
-    name: string;
-    icon: IconType;
-    iconColor: string;
-  }[];
+  techStack: readonly SkillItem[];
 }
 
 export const PROJECTS = [
   {
-    name: "Vestify / 160+ signups",
+    name: "Vestify / 170+ signups",
     img: "/projects/vestify.webp",
     siteLink: "https://vestify.priyanshux.me?utm_source=portfolio",
     githubLink: `${GITHUB_LINK}/vestify`,
@@ -53,22 +29,18 @@ export const PROJECTS = [
       "Groww app inspired UI that feels like a real investing app.",
     ],
     techStack: [
-      { name: "React.js", icon: SiReact, iconColor: "#61DAFB" },
-      { name: "TypeScript", icon: SiTypescript, iconColor: "#3178C6" },
-      { name: "Socket.io", icon: SiSocketdotio, iconColor: "#010101" },
-      { name: "Node.js", icon: SiNodedotjs, iconColor: "#5FA04E" },
-      { name: "Express.js", icon: SiExpress, iconColor: "#000000" },
-      { name: "Prisma", icon: SiPrisma, iconColor: "#2D3748" },
-      { name: "MySQL", icon: SiMysql, iconColor: "#4479A1" },
-      {
-        name: "Github Actions",
-        icon: SiGithubactions,
-        iconColor: "#2088FF",
-      },
-      { name: "Tanstack Query", icon: SiReactquery, iconColor: "#000000" },
-      { name: "Redux Toolkit", icon: SiRedux, iconColor: "#764ABC" },
-      { name: "ShadcnUI", icon: SiShadcnui, iconColor: "#000000" },
-      { name: "Zod", icon: SiZod, iconColor: "#408AFF" },
+      SKILLS["React.js"],
+      SKILLS.TypeScript,
+      SKILLS["Socket.io"],
+      SKILLS["Node.js"],
+      SKILLS["Express.js"],
+      SKILLS.Prisma,
+      SKILLS.MySQL,
+      SKILLS["Github Actions"],
+      SKILLS["Tanstack Query"],
+      SKILLS["Redux Toolkit"],
+      SKILLS.ShadcnUI,
+      SKILLS.Zod,
     ],
   },
   {
@@ -85,9 +57,11 @@ export const PROJECTS = [
       "Supports popular application presets such as PAN Card / SSC Exam Photo & Signature Resizer.",
     ],
     techStack: [
-      { name: "Next.js", icon: SiNextdotjs, iconColor: "#000000" },
-      { name: "TypeScript", icon: SiTypescript, iconColor: "#3178C6" },
-      { name: "ShadcnUI", icon: SiShadcnui, iconColor: "#000000" },
+      SKILLS["Next.js"],
+      SKILLS.TypeScript,
+      SKILLS.PostgreSQL,
+      SKILLS.Drizzle,
+      SKILLS.ShadcnUI,
     ],
   },
   {
@@ -104,11 +78,11 @@ export const PROJECTS = [
       "Subject-wise suggestions and exam-focused study resources.",
     ],
     techStack: [
-      { name: "Next.js", icon: SiNextdotjs, iconColor: "#000000" },
-      { name: "TypeScript", icon: SiTypescript, iconColor: "#3178C6" },
-      { name: "Mongodb", icon: SiMongodb, iconColor: "#47A248" },
-      { name: "Zustand", icon: SiFoodpanda, iconColor: "#000000" },
-      { name: "ShadcnUI", icon: SiShadcnui, iconColor: "#000000" },
+      SKILLS["Next.js"],
+      SKILLS.TypeScript,
+      SKILLS.Mongodb,
+      SKILLS.Zustand,
+      SKILLS.ShadcnUI,
     ],
   },
   {
@@ -127,11 +101,11 @@ export const PROJECTS = [
       "Fund Managers API : Get all funds managed by specific fund managers.",
     ],
     techStack: [
-      { name: "Node.js", icon: SiNodedotjs, iconColor: "#5FA04E" },
-      { name: "Express.js", icon: SiExpress, iconColor: "#000000" },
-      { name: "MySQL", icon: SiMysql, iconColor: "#4479A1" },
-      { name: "Github Actions", icon: SiGithubactions, iconColor: "#2088FF" },
-      { name: "Prisma", icon: SiPrisma, iconColor: "#2D3748" },
+      SKILLS["Node.js"],
+      SKILLS["Express.js"],
+      SKILLS.MySQL,
+      SKILLS["Github Actions"],
+      SKILLS.Prisma,
     ],
   },
   {
@@ -146,11 +120,7 @@ export const PROJECTS = [
       "Get weather by your location or by searching for a city",
       "Hide or unhide widgets, and customize the dashboard according to your preference",
     ],
-    techStack: [
-      { name: "React.js", icon: SiReact, iconColor: "#61DAFB" },
-      { name: "React Router", icon: SiReactrouter, iconColor: "#CA4245" },
-      { name: "Tailwind", icon: SiTailwindcss, iconColor: "#06B6D4" },
-    ],
+    techStack: [SKILLS["React.js"], SKILLS["React Router"], SKILLS.Tailwind],
   },
   {
     name: "Qr Code Scanner",
@@ -163,10 +133,6 @@ export const PROJECTS = [
       "Scan any QR code and get its content.",
       "Integrated into Vestify platform",
     ],
-    techStack: [
-      { name: "React.js", icon: SiReact, iconColor: "#61DAFB" },
-      { name: "ShadcnUI", icon: SiShadcnui, iconColor: "#000000" },
-      { name: "Tailwind", icon: SiTailwindcss, iconColor: "#06B6D4" },
-    ],
+    techStack: [SKILLS["React.js"], SKILLS.ShadcnUI, SKILLS.Tailwind],
   },
 ] as const satisfies readonly Project[];

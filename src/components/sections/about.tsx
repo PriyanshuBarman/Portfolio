@@ -4,9 +4,8 @@ export default function About() {
       <h2 className="text-xl font-semibold sm:text-2xl">About</h2>
       <p className="text-muted-foreground mt-2">
         Hi, I&apos;m Priyanshu. I build full stack applications end-to-end, from
-        database schema to deployed UI. I care most about writing clean,
-        maintainable code, embracing simplicity, and building scalable,
-        long-term solutions.{" "}
+        database schema to deployed UI. I enjoy turning ideas into software and
+        have a deep interest in fintech.{" "}
         <span className="max-sm:hidden">
           My current stack is Next.js, TypeScript, and Tailwind CSS.
         </span>

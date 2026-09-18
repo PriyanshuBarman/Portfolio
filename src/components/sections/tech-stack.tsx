@@ -8,6 +8,7 @@ import {
 import { HugeiconsIcon } from "@hugeicons/react";
 import { motion } from "motion/react";
 
+import type { Skill } from "@/config/skills";
 import { TECH_STACK } from "@/config/tech-stack";
 import { cn } from "@/lib/utils";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -17,7 +18,7 @@ import { Button } from "@/components/ui/button";
 export default function TechStack() {
   const isMobile = useIsMobile();
   const [showAllNames, setShowAllNames] = useState(false); // Whether to show names of all items or not
-  const [expandedItem, setExpandedItem] = useState<string | null>(null);
+  const [expandedItem, setExpandedItem] = useState<Skill | null>(null);
 
   const handleToggle = () => {
     setShowAllNames((prev) => !prev);

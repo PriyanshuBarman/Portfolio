@@ -14,8 +14,8 @@ export const EXPERIENCE = [
   {
     company: {
       name: "CareerCafe",
-      logo: "/companies/careercafe.webp",
-      website: "https://www.careercafe.in",
+      logo: "/companies/careercafe.png",
+      website: "https://careercafe.in",
     },
     role: "Full-Stack Developer Intern",
     location: "Remote",

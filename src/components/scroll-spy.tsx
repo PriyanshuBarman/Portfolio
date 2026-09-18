@@ -20,7 +20,7 @@ import { SECTIONS } from "@/config/sections";
  *    on the anchor tags (e.g., `[&:target-current]:bg-blue-600`).
  */
 
-export default function QuickNavigation() {
+export default function ScrollSpy() {
   const handleClick = (e: MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault();
     const el = document.getElementById(sectionId);
@@ -30,32 +30,32 @@ export default function QuickNavigation() {
   return (
     <nav
       aria-hidden="true"
-      className="group/nav fixed top-1/2 right-8 -translate-y-1/2 [scroll-target-group:auto] max-lg:hidden"
+      className="group/nav fixed top-1/2 right-6 -translate-y-1/2 [scroll-target-group:auto] max-lg:hidden"
     >
       {/* Indicators */}
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-[25.25px]">
         {SECTIONS.map((section) => (
           <a
             key={section.id}
             tabIndex={-1}
             href={`#${section.id}`}
-            className="bg-ring/50 h-1 w-4 rounded-full transition-all duration-200 ease-in-out [&:target-current]:bg-blue-600"
+            className="bg-ring/50 h-[2.5px] w-3 rounded-full transition-all duration-200 ease-in-out [&:target-current]:h-0.75 [&:target-current]:bg-blue-600"
           />
         ))}
       </div>
 
       {/* Popover */}
-      <div className="bg-popover animate-in fade-in-50 shadow-accent absolute top-1/2 -right-6.25 hidden max-h-[50vh] w-68 -translate-y-1/2 flex-col overflow-y-auto rounded-2xl border p-3 shadow-2xl group-hover/nav:flex dark:shadow-none">
+      <div className="bg-popover animate-in fade-in-50 shadow-accent absolute top-1/2 -right-5.25 hidden max-h-[50vh] w-68 -translate-y-1/2 flex-col overflow-y-auto rounded-2xl border px-2 py-3 shadow-2xl group-hover/nav:flex dark:shadow-none">
         {SECTIONS.map((section) => (
           <a
             key={section.id}
             tabIndex={-1}
             href={`#${section.id}`}
             onClick={(e) => handleClick(e, section.id)}
-            className="group/item hover:text-foreground text-muted-foreground flex items-center gap-3 rounded-lg px-3 py-1 text-sm font-medium transition-all duration-200 ease-in-out [&:target-current]:text-blue-600"
+            className="group/item hover:text-foreground text-muted-foreground flex items-center gap-3 rounded-lg px-3 py-1 text-sm font-[450] transition-all duration-200 ease-in-out [&:target-current]:text-blue-600"
           >
             {section.name}
-            <span className="bg-ring/50 ml-auto h-1 w-4 rounded-2xl group-hover/item:bg-current group-[&:target-current]/item:bg-blue-600" />
+            <span className="bg-ring/50 ml-auto h-[2.5px] w-3 rounded-2xl group-hover/item:bg-current group-[&:target-current]/item:h-0.75 group-[&:target-current]/item:bg-blue-600" />
           </a>
         ))}
       </div>

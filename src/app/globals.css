@@ -137,7 +137,7 @@
   }
 
   ::selection {
-    @apply bg-foreground text-background;
+    @apply bg-primary text-background;
   }
 
   /* Custom scrollbar styling. */

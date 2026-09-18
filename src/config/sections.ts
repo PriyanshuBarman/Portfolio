@@ -28,8 +28,4 @@ export const SECTIONS = [
     id: "education",
     name: "Education",
   },
-  {
-    id: "socials",
-    name: "Socials",
-  },
 ] as const satisfies readonly Section[];

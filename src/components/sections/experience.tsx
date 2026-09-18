@@ -18,17 +18,19 @@ export default function Experience() {
         {EXPERIENCE.map(({ company, role, location, period, isCurrent }) => (
           <Item key={`${company.name}-${role}`} className="px-0 sm:gap-4">
             <ItemMedia>
-              <Avatar className="size-8 after:border-none sm:size-10">
+              <Avatar className="size-9 after:border-none sm:size-10">
                 <AvatarImage src={company.logo} alt={company.name} />
                 <AvatarFallback />
               </Avatar>
             </ItemMedia>
+
             <ItemContent>
               <div className="flex items-center gap-2 sm:gap-3">
                 <a
                   href={company.website}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="hover:underline"
                 >
                   <ItemTitle className="sm:text-lg">{company.name}</ItemTitle>
                 </a>

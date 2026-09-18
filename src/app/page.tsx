@@ -1,6 +1,6 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import QuickNavigation from "@/components/quick-navigation";
+import ScrollSpy from "@/components/scroll-spy";
 import About from "@/components/sections/about";
 import Education from "@/components/sections/education";
 import Experience from "@/components/sections/experience";
@@ -25,7 +25,7 @@ export default function Home() {
         <Education />
         <Socials />
       </main>
-      <QuickNavigation />
+      <ScrollSpy />
       <ThemeToggle
         enableHotKey
         showThemeIcon
