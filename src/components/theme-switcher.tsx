@@ -22,25 +22,14 @@ const THEME_OPTIONS = [
 
 export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
-
   const isMounted = useSyncExternalStore(
     () => () => {},
     () => true,
     () => false,
   );
 
-  if (!isMounted) {
-    return (
-      <div className="bg-accent flex h-8.5 w-25.5 animate-pulse rounded-full" />
-    );
-  }
-
   return (
-    <motion.div
-      key={String(isMounted)}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.3 }}
+    <div
       className="bg-background ring-border inline-flex h-fit items-center gap-1 overflow-clip rounded-full p-0.5 ring-1"
       role="radiogroup"
     >
@@ -49,11 +38,11 @@ export default function ThemeSwitcher() {
           key={option.value}
           icon={option.icon}
           value={option.value}
-          isActive={theme === option.value}
+          isActive={isMounted && theme === option.value}
           onClick={setTheme}
         />
       ))}
-    </motion.div>
+    </div>
   );
 }
 

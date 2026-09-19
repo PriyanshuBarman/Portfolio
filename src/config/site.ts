@@ -11,9 +11,8 @@ export const SITE_INFO = {
     "Priyanshu Barman Portfolio",
     "Priyanshu Portfolio",
     "Priyanshu Developer",
-    "Priyanshu Tech",
-    "Priyanshu Codes",
     "Priyanshu WB",
+    "Priyanshux",
   ],
 };
 

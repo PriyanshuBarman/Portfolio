@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { CopyrightYear } from "@/components/copyright-year";
 import { VisitorCount } from "@/components/visitor-count";
 
-export default function Footer() {
+export default function SiteFooter() {
   return (
     <footer className="mx-auto flex max-w-3xl flex-col items-center justify-center gap-2 border-t px-4 pt-6 pb-18 sm:flex-row sm:justify-between">
       <span className="text-muted-foreground text-sm">

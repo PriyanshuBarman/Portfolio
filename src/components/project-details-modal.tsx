@@ -95,7 +95,7 @@ export default function ProjectDetailsModal({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="pb-4 md:max-w-2xl md:p-8!">
+      <DialogContent showCloseButton={false} className="pb-4 md:max-w-2xl md:p-8!">
         <DialogHeader className="mt-4 gap-4 text-start! md:mt-0">
           <div className="flex items-center justify-between">
             <DialogTitle className="md:text-xl">{project.name}</DialogTitle>

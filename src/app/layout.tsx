@@ -1,11 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
 
 import { META_THEME_COLORS, SITE_INFO, X_USERNAME } from "@/config/site";
 import { cn } from "@/lib/utils";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { ThemeProvider } from "@/components/theme-provider";
+import Providers from "@/components/providers";
 
 import "./globals.css";
 
@@ -21,7 +19,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  title: SITE_INFO.name,
+  title: {
+    template: `%s – ${SITE_INFO.name}`,
+    default: `${SITE_INFO.name} – Full Stack Developer`,
+  },
   description: SITE_INFO.description,
   keywords: SITE_INFO.keywords,
   authors: {
@@ -81,16 +82,8 @@ export default function RootLayout({
         geist.variable,
       )}
     >
-      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
       <body className="flex min-h-full flex-col">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <TooltipProvider>{children}</TooltipProvider>
-        </ThemeProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
